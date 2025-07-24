@@ -1,0 +1,4 @@
+collections:
+  hes:
+    output: true
+    permalink: /hes/:name/
