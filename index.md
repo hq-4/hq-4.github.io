@@ -42,15 +42,14 @@ title: A Blog
 
 {% assign posts_by_year = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
 {% for year in posts_by_year %}
-<details {% if forloop.first %}open{% endif %}>
+<details markdown="1" {% if forloop.first %}open{% endif %}>
   <summary>{{ year.name }}</summary>
 
   {% assign sorted = year.items | sort: "date" | reverse %}
   {% for post in sorted %}
   - [{{ post.date | date: "%b %-d" }} – {{ post.title }}]({{ post.url }})
   {% endfor %}
-
 </details>
-
 {% endfor %}
+
 
