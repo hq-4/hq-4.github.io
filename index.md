@@ -36,6 +36,23 @@ title: A Blog
 </ul>
 [View all HES notes →](/hes/)
 
+## 🏷️ Tags
+
+{% for tag in site.tags %}
+<details>
+  <summary>{{ tag[0] }} ({{ tag[1].size }} posts)</summary>
+
+  <ul>
+    {% assign posts = tag[1] | sort: "date" | reverse %}
+    {% for post in posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.date | date: "%b %-d" }} – {{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</details>
+
+{% endfor %}
 
 
 ## 📅 Timeline
