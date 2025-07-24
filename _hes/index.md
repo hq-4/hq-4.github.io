@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "HES Advanced Calc Notes"
+title: "HES Notes"
 permalink: /hes/
 ---
 
