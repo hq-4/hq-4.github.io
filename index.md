@@ -18,7 +18,10 @@ title: Quant Self Study
 
 ---
 
-## HES Advanced Calc Notes
+## HES Notes
+| Term | Course |
+| -------- | ------- |
+| 2025 Fall | Managerial Economics |
 <ul>
   {% for note in site.hes %}
     <li>
