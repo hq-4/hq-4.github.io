@@ -39,7 +39,7 @@ title: A Blog
 ## 🏷️ Tags
 
 {% for tag in site.tags %}
-<details>
+<details markdown="1>
   <summary>{{ tag[0] }} ({{ tag[1].size }} posts)</summary>
 
   <ul>
