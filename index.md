@@ -29,14 +29,4 @@ title: Quant Self Study
 </ul>
 [View all HES notes →](/hes/)
 
----
 
-## Notebooks
-<ul>
-  {% assign nb = site.static_files | where_exp: "f", "f.extname == '.html' and f.path contains 'assets/notebooks'" %}
-  {% for f in nb %}
-    <li><a href="{{ f.path }}">{{ f.name }}</a></li>
-  {% endfor %}
-</ul>
-
----
