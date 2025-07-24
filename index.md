@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Quant Self Study
+title: A Blog
 ---
 
 # Welcome to Self Study Blog
